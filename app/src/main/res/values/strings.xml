@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">P03-Quote</string>
+    <string name="rstr_bid_name">Bid:</string>
+    <string name="rstr_open_name">Open:</string>
+    <string name="rstr_high_name">High:</string>
+    <string name="rstr_52w_high_name">52w High:</string>
+    <string name="rstr_ask_name">Ask:</string>
+    <string name="rstr_preclose_name">Pre-Close:</string>
+    <string name="rstr_low_name">Low:</string>
+    <string name="rstr_52w_low_name">52w Low:</string>
+    <string name="action_settings">Settings</string>
+    <string name="rstr_stock_lab">Stocks</string>
+</resources>

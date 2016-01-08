@@ -1,0 +1,247 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context=".DetailedActivity"
+                android:background="@color/white">
+
+    <TextView
+        android:id="@+id/xv_symbol"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/xv_timeVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/xv_companyName"
+        android:layout_alignBottom="@+id/xv_companyName"
+        android:layout_alignRight="@+id/xv_askText"
+        android:layout_alignEnd="@+id/xv_askText"/>
+    <TextView
+        android:id="@+id/xv_lastTradeVal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_above="@+id/xv_companyName"
+        android:layout_toRightOf="@+id/xv_openVal"
+        android:layout_toEndOf="@+id/xv_openVal"/>
+
+    <TextView
+        android:id="@+id/xv_companyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xv_symbol"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/xv_askText"
+        android:layout_toLeftOf="@+id/xv_askText"/>
+
+    <TextView
+        android:text="@string/rstr_bid_name"
+        android:id="@+id/xv_bidText"
+        android:layout_marginTop="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xv_changeVal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+    <TextView
+        android:id="@+id/xv_52wHighVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/xv_52highText"
+        android:layout_toRightOf="@+id/xv_52highText"
+        android:layout_toEndOf="@+id/xv_52highText"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"/>
+
+    <TextView
+        android:text="@string/rstr_open_name"
+        android:id="@+id/xv_openText"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xv_bidText"/>
+    <TextView
+        android:text="@string/rstr_high_name"
+        android:id="@+id/xv_highText"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xv_openText"/>
+    <TextView
+        android:text="@string/rstr_52w_high_name"
+        android:id="@+id/xv_52highText"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xv_highText"/>
+
+    <TextView
+        android:id="@+id/xv_highVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/xv_highText"
+        android:layout_alignLeft="@+id/xv_52wHighVal"
+        android:layout_alignStart="@+id/xv_52wHighVal"/>
+
+    <TextView
+        android:id="@+id/xv_openVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/xv_openText"
+        android:layout_alignLeft="@+id/xv_highVal"
+        android:layout_alignStart="@+id/xv_highVal"/>
+
+    <TextView
+        android:id="@+id/xv_bidVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/xv_openText"
+        android:layout_toRightOf="@+id/xv_openText"
+        android:layout_toEndOf="@+id/xv_openText"/>
+
+    <TextView
+        android:text="@string/rstr_ask_name"
+        android:id="@+id/xv_askText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/xv_openText"
+        android:layout_toRightOf="@+id/xv_openVal"
+        android:layout_toEndOf="@+id/xv_openVal"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"/>
+
+    <TextView
+        android:id="@+id/xv_askVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/xv_openText"
+        android:layout_toRightOf="@+id/xv_askText"
+        android:layout_toEndOf="@+id/xv_askText"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:text="@string/rstr_preclose_name"
+        android:id="@+id/xv_precloseText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/xv_openVal"
+        android:layout_alignLeft="@+id/xv_askText"
+        android:layout_alignStart="@+id/xv_askText"/>
+
+    <TextView
+        android:id="@+id/xv_precloseVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/xv_precloseText"
+        android:layout_toLeftOf="@+id/xv_pauseButton"
+        android:layout_toStartOf="@+id/xv_pauseButton"/>
+
+
+    <TextView
+        android:text="@string/rstr_low_name"
+        android:id="@+id/xv_lowText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/xv_52highText"
+        android:layout_alignLeft="@+id/xv_precloseText"
+        android:layout_alignStart="@+id/xv_precloseText"/>
+
+    <TextView
+        android:text="@string/rstr_52w_low_name"
+        android:id="@+id/xv_52wlowText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/xv_52wHighVal"
+        android:layout_alignLeft="@+id/xv_lowText"
+        android:layout_alignStart="@+id/xv_lowText"/>
+
+    <TextView
+        android:id="@+id/xv_lowVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/xv_52highText"
+        android:layout_alignLeft="@+id/xv_precloseVal"
+        android:layout_alignStart="@+id/xv_precloseVal"/>
+
+    <TextView
+        android:id="@+id/xv_52wlowVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/xv_52wlowText"
+        android:layout_alignLeft="@+id/xv_lowVal"
+        android:layout_alignStart="@+id/xv_lowVal"/>
+
+    <TextView
+        android:id="@+id/xv_changeVal"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/xv_timeVal"
+        android:layout_toRightOf="@+id/xv_precloseText"
+        android:layout_toEndOf="@+id/xv_precloseText"/>
+
+    <TextView
+        android:id="@+id/xv_changePercentVal"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/xv_timeVal"
+        android:layout_alignLeft="@+id/xv_changeVal"
+        android:layout_alignStart="@+id/xv_changeVal"/>
+
+    <com.example.amanda.p03_quote.MyCanvas
+        android:id="@+id/xv_canvas"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@color/bright_foreground_inverse_material_light"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="5dp"
+        android:layout_above="@+id/xv_pauseButton"
+        android:layout_alignRight="@+id/xv_pauseButton"
+        android:layout_alignEnd="@+id/xv_pauseButton"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/xv_pauseButton"
+        android:src="@drawable/ic_media_pause"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/xv_refreshButton"
+        android:src="@drawable/ic_menu_rotate"
+        android:background="@color/white"
+        android:layout_below="@+id/xv_canvas"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/xv_playButton"
+        android:src="@drawable/ic_menu_play_clip"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>
